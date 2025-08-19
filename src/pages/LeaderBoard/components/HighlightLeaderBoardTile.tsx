@@ -14,13 +14,12 @@ export const HighlightLeaderBoardTile = (props: HighlightTileProps) => {
     const { title, name, icon, value, textColor } = props
 
     return (
-        <Card className={`py-5 rounded-xl shadow-[0_0_20px] shadow-gray-400/20 `}>
+        <Card className={`md:py-5 py-4 rounded-xl shadow-[0_0_20px] shadow-gray-400/20 `}>
             <CardContent className="flex flex-col items-center justify-between">
-                <CardTitle className={`text-2xl`}>{icon}</CardTitle>
-                <CardTitle className={`text-sm font-bold`}>{title}</CardTitle>
+                <CardTitle className={`md:text-2xl text-base`}>{icon}</CardTitle>
+                <CardTitle className={`md:text-sm text-xs font-bold`}>{title}</CardTitle>
                 <CardDescription className="text-gray-500 text-xs">{name}</CardDescription>
-                <CardTitle className={`text-lg font-semibold ${textColor} `}>{value}</CardTitle>
-
+                <CardTitle className={`md:text-lg text-sm font-semibold ${textColor} `}>{value}</CardTitle>
             </CardContent>
         </Card>
     );

@@ -14,15 +14,18 @@ export default function Analytics() {
                     Analytics & Reports
                 </CardTitle>
                 <div className="flex items-center gap-2">
-                    <Badge variant="outline" className="rounded-md p-2 px-4 text-gray-500">
+                    <Badge
+                        variant="outline"
+                        className="rounded-md md:p-2 p-1 px-2 md:mt-0 mt-2 self-end md:px-4 md:text-sm text-[10px] text-gray-500">
                         CBSE Board • Last updated: 12/08/2025, 15:46:57
                     </Badge>
                 </div>
             </div>
 
+            {/* Analytics report  */}
             <AnalyticsReport />
 
-            <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="md:mt-8 mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <PerformanceChart
                     title={"Student Performance Distribution"}
                 />

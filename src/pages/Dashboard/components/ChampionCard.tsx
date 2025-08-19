@@ -44,7 +44,7 @@ export default function ChampionCard({ student }: ChampionCardProps) {
   };
 
   return (
-    <Card className="w-64 flex flex-col gap-3 relative text-center rounded-2xl shadow-[0_0_20px] overflow-hidden shadow-gray-400/30 p-0 pb-4">
+    <Card className="lg:w-64 w-44 flex flex-col md:gap-3 gap-2 relative text-center rounded-2xl shadow-[0_0_20px] overflow-hidden shadow-gray-400/30 p-0 pb-4">
       {/* Top Row with Icon */}
       <div className="flex justify-between p-0">
         <CardTitle className="absolute -left-[6px] -top-[4px] text-2xl">{getRankIcon(student.rank)}</CardTitle>
@@ -75,14 +75,14 @@ export default function ChampionCard({ student }: ChampionCardProps) {
           </Avatar>
           {student.rank <= 3 && <CardTitle className="absolute items-center bottom-[6px] mr-[6px] text-2xl">{getRankIcon(student.rank)}</CardTitle>}
         </div>
-        <CardTitle className="mt-2">{student.name}</CardTitle>
-        <CardDescription className="text-sm text-muted-foreground">{student.class}</CardDescription>
+        <CardTitle className="mt-2 lg:text-base text-xs">{student.name}</CardTitle>
+        <CardDescription className="lg:text-sm text-xs text-muted-foreground">{student.class}</CardDescription>
 
         {/* Points badge */}
         <p
-          className={`mt-1 font-bold bg-${getRankColor(
+          className={`mt-1 md:text-base text-xs  font-bold bg-${getRankColor(
             student.rank
-          )} text-white px-3 py-1 rounded-full`}
+          )} text-white md:px-3 py-1 px-2 text-center rounded-full`}
         >
           {student.points} pts
         </p>

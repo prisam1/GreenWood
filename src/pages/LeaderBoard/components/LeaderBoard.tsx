@@ -8,8 +8,8 @@ export default function LeaderBoard() {
             {/* Top */}
             <CardContent className="py-4 flex flex-col items-center w-full rounded-t-xl bg-yellow-50 border-b-[1.5px] border-orange-200">
 
-                <CardTitle className="text-[22px] font-semibold text-blue-500">🥇 Campions Podium 🥇</CardTitle>
-                <CardDescription className="mt-1 text-[#964B00] ">This month's top 3 achievers</CardDescription>
+                <CardTitle className="md:text-[22px] md:mb-1 text-lg font-semibold text-blue-500">🥇 Campions Podium 🥇</CardTitle>
+                <CardDescription className="mt-1 md:text-sm text-[11px] text-[#964B00] ">This month's top 3 achievers</CardDescription>
 
             </CardContent>
 
@@ -26,7 +26,7 @@ export default function LeaderBoard() {
                             <CardTitle className="absolute -top-1 -right-1">🥈</CardTitle>
                         </Avatar>
 
-                        <Card className="px-6 py-8 rounded-t-xl rounded-b-none gap-2 bg-gradient-to-b from-slate-500 via-slate-500 items-center text-white to-slate-400  ">
+                        <Card className="md:px-6 px-5 md:py-8 py-6 rounded-t-xl rounded-b-none gap-2 bg-gradient-to-b from-slate-500 via-slate-500 items-center text-white to-slate-400  ">
                             <CardTitle className="text-sm font-light">Hvff</CardTitle>
                             <CardDescription className="text-gray-200 text-[10px]">Class 7</CardDescription>
                             <CardTitle className="text-white text-lg">295 pts</CardTitle>
@@ -46,7 +46,7 @@ export default function LeaderBoard() {
                             <CardTitle className="absolute -top-[14px] -right-6 text-3xl">🏆</CardTitle>
                         </Avatar>
 
-                        <Card className="px-6 py-8 rounded-t-xl rounded-b-none gap-2 bg-gradient-to-b from-yellow-500 via-yellow-500 items-center text-white to-yellow-400  ">
+                        <Card className="md:px-6 md:py-8 px-5 py-6 rounded-t-xl rounded-b-none gap-2 bg-gradient-to-b from-yellow-500 via-yellow-500 items-center text-white to-yellow-400  ">
                             <CardTitle className="text-sm ">Ahan Kumar</CardTitle>
                             <CardDescription className="text-gray-200 text-[10px]">Class 8</CardDescription>
                             <CardTitle className="text-white text-lg">830 pts</CardTitle>
@@ -66,7 +66,7 @@ export default function LeaderBoard() {
                             <CardTitle className="absolute -top-1 -right-1">🥉</CardTitle>
                         </Avatar>
 
-                        <Card className="px-6 py-8 rounded-t-xl rounded-b-none gap-2 bg-gradient-to-b from-orange-500 via-orange-500 items-center text-white to-orange-400  ">
+                        <Card className="md:px-6 md:py-8 px-5 py-6 rounded-t-xl rounded-b-none gap-2 bg-gradient-to-b from-orange-500 via-orange-500 items-center text-white to-orange-400  ">
                             <CardTitle className="text-sm font-light">Flower Girl</CardTitle>
                             <CardDescription className="text-gray-200 text-[10px]">Class 6</CardDescription>
                             <CardTitle className="text-white text-lg">190 pts</CardTitle>

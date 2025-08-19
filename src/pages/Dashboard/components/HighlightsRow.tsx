@@ -2,7 +2,7 @@ import { HighlightTile } from "./HighlightTile";
 
 export default function HighlightsRow() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-3 mt-4">
             <HighlightTile
                 title="Top Scorer"
                 value="Ahan Kumar - 830 pts"

@@ -6,8 +6,8 @@ export default function PerformanceChart({ title, student }: any) {
     return (
         <Card className="shadow-[0_0_20px] shadow-gray-400/30">
             <CardHeader>
-                <CardTitle className={`text-xl font-semibold text-${student === "true" ? "blue-500" : "black"}`}>{title}</CardTitle>
-                <CardDescription className="">
+                <CardTitle className={`md:text-xl text-sm font-semibold text-${student === "true" ? "blue-500" : "black"}`}>{title}</CardTitle>
+                <CardDescription className="md:text-sm text-xs">
                     Overall accuracy breakdown across all students
                 </CardDescription>
             </CardHeader>

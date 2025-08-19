@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { IMAGES, MENU } from "@/constant";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { LogOut, Menu, X } from "lucide-react";
 
@@ -12,22 +12,26 @@ export default function Sidebar() {
   return (
     <>
       {/* Mobile top bar */}
-      <Card className="md:hidden flex items-center justify-between px-5 py-3 border-b shadow-sm bg-white">
-        <div className="flex items-center gap-8">
+      <Card className="md:hidden flex items-center flex-row justify-between md:px-5 px-4 py-3 border-b shadow-md bg-white">
+        <Link
+          to="/"
+          className="flex items-center lg:gap-8 gap-2">
           <img
             src={IMAGES.logo}
             alt="logo"
             className="w-10 h-10 rounded-lg object-cover"
           />
           <p className="text-lg font-bold text-blue-500">SpeakGenie</p>
-        </div>
+        </Link>
+
+        {/* Menu button */}
         <Button
           variant="ghost"
           size="icon"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
-          {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
         </Button>
       </Card>
 
@@ -37,11 +41,13 @@ export default function Sidebar() {
           fixed inset-y-0 left-0 z-40 w-70 transform p-0 bg-white shadow-lg
           transition-transform duration-300 ease-in-out
           md:static md:translate-x-0 md:min-h-screen md:rounded-none
-          ${isOpen ? "translate-x-0" : "-translate-x-full"}
+          ${isOpen ? "translate-x-0 p-0 rounded-none" : "-translate-x-full"}
         `}
       >
         {/* Logo (desktop only) */}
-        <CardContent className="hidden md:flex gap-2 p-5 border-b">
+        <Link
+          to="/"
+          className="flex gap-2 md:p-5 p-2 border-b">
           <img
             src={IMAGES.logo}
             alt="logo"
@@ -51,7 +57,7 @@ export default function Sidebar() {
             <p className="text-2xl font-bold text-blue-500">SpeakGenie</p>
             <p className="text-xs text-muted-foreground">Admin Panel</p>
           </div>
-        </CardContent>
+        </Link>
 
         {/* Menu */}
         <div className="flex flex-col justify-between h-full">

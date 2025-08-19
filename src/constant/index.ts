@@ -63,7 +63,7 @@ export const STATS = [
     },
     {
       title: "Average Session Time",
-      value: "24 min%",
+      value: "24 min",
       data: "+8% from last month",  
     },
     {

@@ -6,8 +6,8 @@ export default function ClassWiseChart() {
   return (
     <Card className="shadow-[0_0_20px] shadow-gray-400/20">
       <CardHeader>
-        <CardTitle className="text-xl font-semibold text-blue-500">Class‑wise Student Enrollment</CardTitle>
-        <CardDescription>Student distribution across different grades</CardDescription>
+        <CardTitle className="md:text-xl text-sm font-semibold text-blue-500">Class‑wise Student Enrollment</CardTitle>
+        <CardDescription className="md:text-sm text-xs">Student distribution across different grades</CardDescription>
       </CardHeader>
       <CardContent className="h-64 mt-10">
         <ResponsiveContainer width="100%" height="100%">

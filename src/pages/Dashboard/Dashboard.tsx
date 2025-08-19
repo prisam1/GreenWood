@@ -22,19 +22,20 @@ export default function Dashboard() {
   const [query, setQuery] = useState("");
 
   return (
-    <div className="pt-2">
-
+    <div className="pt-2 min-w-full w-full">
       {/* Header */}
       <div className="flex flex-col md:items-center gap-0 sm:flex-row sm:items-end sm:justify-between mb-0">
         <Card className="p-0 border-none rounder-none gap-2 bg-inherit shadow-none">
           <CardTitle className="text-xl sm:text-2xl md:text-4xl p-0 font-bold text-blue-500">
             Greenwood Elementary School
           </CardTitle>
-          <CardDescription className="text-md text-muted-foreground mt-0 p-0">
+          <CardDescription className="md:text-md text-xs text-muted-foreground mt-0 p-0">
             Welcome back, School Admin! Here's your school's overview.
           </CardDescription>
         </Card>
-        <Badge variant="outline" className="rounded-md p-2 px-4 text-gray-500">
+        <Badge
+          variant="outline"
+          className="rounded-md md:p-2 p-1 px-2 md:mt-0 mt-2 self-end md:px-4 md:text-sm text-[10px] text-gray-500">
           CBSE Board • Last updated: 12/08/2025, 15:46:57
         </Badge>
       </div>
@@ -43,7 +44,7 @@ export default function Dashboard() {
       <StatsRow />
 
       {/* Charts */}
-      <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="md:mt-8 mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
         <ClassWiseChart />
         <PerformanceChart
           title={"Performance Distribution"}
@@ -54,11 +55,11 @@ export default function Dashboard() {
       {/* Top Champions */}
       <TopChampions />
 
-      <Card className="mt-6 px-6 shadow-[0_0_20px] shadow-gray-400/30">
-        <CardContent className="flex items-center justify-between mb-3">
+      <Card className="mt-6 md:px-6 px-[14px] shadow-[0_0_20px] shadow-gray-400/30">
+        <CardContent className="flex md:flex-row flex-col md:items-center items-start p-0 justify-between mb-3">
           <div>
-            <CardTitle className="font-semibold text-blue-500">All Students</CardTitle>
-            <CardDescription className="mt-2">
+            <CardTitle className="font-semibold md:text-base text-sm text-blue-500">All Students</CardTitle>
+            <CardDescription className="lg:mt-2 mt-1 md:text-sm text-xs md:mb-0 mb-2">
               Complete student directory with performance details
             </CardDescription>
           </div>
