@@ -11,7 +11,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 export default function NotificationPreferences() {
     return (
 
-        <Card className="w-full">
+        <Card className="w-full shadow-[0_0_20px] shadow-gray-400/30 ">
             <CardHeader>
                 <CardTitle className="font-bold">Notification Preferences</CardTitle>
                 <CardDescription className="text-sm">

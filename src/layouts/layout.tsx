@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 export default function Layout() {
   return (
-    <div className="min-h-screen bg-gradient-to-tr from-slate-100 via-slate-50 to bg-slate-50">
+    <div className="min-h-screen bg-gradient-to-tr from-slate-50 via-slate-0 to bg-slate-0">
       <div className="max-w-full px-4 md:px-6 lg:px-0 grid grid-cols-1 md:grid-cols-[300px_1fr] py-0">
         {/* Sidebar */}
         <Sidebar />
@@ -13,7 +13,7 @@ export default function Layout() {
           <Outlet />
         </main>
       </div>
- 
+
     </div>
   );
 }

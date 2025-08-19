@@ -80,3 +80,37 @@ export const STATS = [
     { label: "Analytics", icon: BarChart, path: "/analytics" },
     { label: "Settings", icon: Settings, path: "/settings" },
   ];
+
+  export const CLASSES = [
+    "All",
+    "Class 1",
+    "Class 2",
+    "Class 3",
+    "Class 4",
+    "Class 5",
+    "Class 6",
+    "Class 7",
+    "Class 8",
+  ]
+
+  export const FILTER =[
+    "Alphabetical",
+    "Marks",
+    "Points",
+    "Lessons",
+    "Streak"
+]
+
+export const MONTHS =[
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sept",
+  "Nov",
+  "Dec",
+]

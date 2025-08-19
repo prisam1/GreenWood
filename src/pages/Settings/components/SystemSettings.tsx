@@ -11,7 +11,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 
 export default function SystemSettings() {
     return (
-        <Card className="w-full">
+        <Card className="w-full shadow-[0_0_20px] shadow-gray-400/30 ">
             <CardHeader>
                 <CardTitle className="font-bold">System Settings</CardTitle>
                 <CardDescription>

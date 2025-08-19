@@ -13,7 +13,7 @@ import LeaderBoard from "@/pages/LeaderBoard/components/LeaderBoard";
 import CompleteRankings from "@/pages/LeaderBoard/components/CompleteRankings";
 import HighlightsRowLeaderBoard from "@/pages/LeaderBoard/components/HighlightsRowLeaderBoard";
 import { Badge } from "@/components/ui/badge";
-import { IMAGES } from "@/constant";
+import { CLASSES, FILTER, IMAGES, MONTHS } from "@/constant";
 
 export default function Leaderboard() {
     const [query, setQuery] = useState("");
@@ -43,7 +43,7 @@ export default function Leaderboard() {
 
             <LeaderBoard />
 
-            <Card className="mt-8">
+            <Card className="mt-8 shadow-[0_0_20px] shadow-gray-400/20 ">
                 <CardContent className="flex items-center justify-between">
 
                     <div className="flex items-center gap-4 w-full">
@@ -65,17 +65,7 @@ export default function Leaderboard() {
                                 </Button>
                             </DropdownMenuTrigger>
                             <DropdownMenuContent align="end">
-                                {[
-                                    "All",
-                                    "Class 1",
-                                    "Class 2",
-                                    "Class 3",
-                                    "Class 4",
-                                    "Class 5",
-                                    "Class 6",
-                                    "Class 7",
-                                    "Class 8",
-                                ].map((c) => (
+                                {CLASSES.map((c) => (
                                     <DropdownMenuItem key={c}>{c}</DropdownMenuItem>
                                 ))}
                             </DropdownMenuContent>
@@ -92,19 +82,7 @@ export default function Leaderboard() {
                                 </Button>
                             </DropdownMenuTrigger>
                             <DropdownMenuContent align="end">
-                                {[
-                                    "Jan",
-                                    "Feb",
-                                    "Mar",
-                                    "Apr",
-                                    "May",
-                                    "Jun",
-                                    "Jul",
-                                    "Aug",
-                                    "Sept",
-                                    "Nov",
-                                    "Dec",
-                                ].map((c) => (
+                                {MONTHS.map((c) => (
                                     <DropdownMenuItem key={c}>{c}</DropdownMenuItem>
                                 ))}
                             </DropdownMenuContent>
@@ -122,13 +100,7 @@ export default function Leaderboard() {
                                 </Button>
                             </DropdownMenuTrigger>
                             <DropdownMenuContent align="end">
-                                {[
-                                    "Alphabetical",
-                                    "Marks",
-                                    "Points",
-                                    "Lessons",
-                                    "Streak"
-                                ].map((c) => (
+                                {FILTER.map((c) => (
                                     <DropdownMenuItem key={c}>{c}</DropdownMenuItem>
                                 ))}
                             </DropdownMenuContent>
@@ -138,7 +110,10 @@ export default function Leaderboard() {
                 </CardContent>
             </Card>
 
+            {/* Rankings */}
             <CompleteRankings />
+
+            {/* Highlights */}
             <HighlightsRowLeaderBoard />
         </div>
     );

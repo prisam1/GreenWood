@@ -7,7 +7,7 @@ import {
 
 export const StatsCard = ({ title, value, data, change, name, icon }: any) => {
   return (
-    <Card className="shadow-[0_0_20px] shadow-gray-400/20 p-6">
+    <Card className="shadow-[0_0_20px] shadow-gray-400/30 p-6">
       <CardContent className="p-0">
         <CardHeader className="flex flex-row items-center justify-between p-0">
           <CardTitle className="text-sm font-medium text-muted-foreground">{title}</CardTitle>

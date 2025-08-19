@@ -4,7 +4,7 @@ import { performancePie, COLORS, studentPerformancePie, COLORS2 } from "@/mockDa
 
 export default function PerformanceChart({ title, student }: any) {
     return (
-        <Card className="shadow-[0_0_20px] shadow-gray-400/20 ">
+        <Card className="shadow-[0_0_20px] shadow-gray-400/30">
             <CardHeader>
                 <CardTitle className={`text-xl font-semibold text-${student === "true" ? "blue-500" : "black"}`}>{title}</CardTitle>
                 <CardDescription className="">

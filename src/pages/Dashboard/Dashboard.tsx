@@ -16,6 +16,7 @@ import TopChampions from "@/pages/Dashboard/components/TopChampions";
 import StudentsTable from "@/pages/Dashboard/components/StudentsTable";
 import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
 import { ALL_STUDENTS } from "@/mockData/students";
+import { CLASSES } from "@/constant";
 
 export default function Dashboard() {
   const [query, setQuery] = useState("");
@@ -38,6 +39,7 @@ export default function Dashboard() {
         </Badge>
       </div>
 
+      {/* Status */}
       <StatsRow />
 
       {/* Charts */}
@@ -52,7 +54,7 @@ export default function Dashboard() {
       {/* Top Champions */}
       <TopChampions />
 
-      <Card className="mt-6 px-6">
+      <Card className="mt-6 px-6 shadow-[0_0_20px] shadow-gray-400/30">
         <CardContent className="flex items-center justify-between mb-3">
           <div>
             <CardTitle className="font-semibold text-blue-500">All Students</CardTitle>
@@ -80,17 +82,7 @@ export default function Dashboard() {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
-                {[
-                  "All",
-                  "Class 1",
-                  "Class 2",
-                  "Class 3",
-                  "Class 4",
-                  "Class 5",
-                  "Class 6",
-                  "Class 7",
-                  "Class 8",
-                ].map((c) => (
+                {CLASSES.map((c) => (
                   <DropdownMenuItem key={c}>{c}</DropdownMenuItem>
                 ))}
               </DropdownMenuContent>

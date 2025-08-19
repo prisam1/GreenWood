@@ -19,7 +19,7 @@ interface StudentProps {
 export const StudentChip = ({ student }: StudentProps) => {
 
     return (
-        <Card className="flex flex-row items-center justify-between rounded-2xl shadow-[0_0_20px] shadow-gray-400/20 p-3">
+        <Card className="flex flex-row items-center justify-between rounded-2xl shadow-[0_0_20px] shadow-gray-400/30 p-3">
             <CardContent className="flex items-center gap-3">
                 <Avatar className="h-12 w-12 border-2">
                     <AvatarImage

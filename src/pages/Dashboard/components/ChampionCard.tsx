@@ -44,7 +44,7 @@ export default function ChampionCard({ student }: ChampionCardProps) {
   };
 
   return (
-    <Card className="w-64 flex flex-col gap-3 relative text-center rounded-2xl shadow-[0_0_20px] overflow-hidden shadow-gray-400/20 p-0 pb-4">
+    <Card className="w-64 flex flex-col gap-3 relative text-center rounded-2xl shadow-[0_0_20px] overflow-hidden shadow-gray-400/30 p-0 pb-4">
       {/* Top Row with Icon */}
       <div className="flex justify-between p-0">
         <CardTitle className="absolute -left-[6px] -top-[4px] text-2xl">{getRankIcon(student.rank)}</CardTitle>

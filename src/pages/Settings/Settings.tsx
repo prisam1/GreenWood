@@ -19,7 +19,6 @@ export default function Settings() {
                 <SystemSettings />
 
                 {/* Notification Preferences */}
-
                 <NotificationPreferences />
 
                 {/* Data Management */}

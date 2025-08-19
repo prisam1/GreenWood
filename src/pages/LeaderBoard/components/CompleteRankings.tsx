@@ -4,7 +4,7 @@ import RankingCard from "./RankingCard";
 
 export default function CompleteRankings() {
     return (
-        <Card className="mt-8 p-6 flex w-full min-w-fit">
+        <Card className="mt-8 p-6 shadow-[0_0_20px] shadow-gray-400/30 flex w-full min-w-fit">
             <CardContent className="p-0">
                 <CardTitle className="text-xl font-semibold text-blue-500">Complete Rankings</CardTitle>
                 <CardDescription className="mt-1">All students ranked by points earned this month</CardDescription>

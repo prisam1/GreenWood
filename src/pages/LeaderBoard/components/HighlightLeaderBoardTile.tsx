@@ -14,7 +14,7 @@ export const HighlightLeaderBoardTile = (props: HighlightTileProps) => {
     const { title, name, icon, value, textColor } = props
 
     return (
-        <Card className={`py-5 border rounded-xl`}>
+        <Card className={`py-5 rounded-xl shadow-[0_0_20px] shadow-gray-400/20 `}>
             <CardContent className="flex flex-col items-center justify-between">
                 <CardTitle className={`text-2xl`}>{icon}</CardTitle>
                 <CardTitle className={`text-sm font-bold`}>{title}</CardTitle>

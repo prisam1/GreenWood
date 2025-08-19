@@ -7,7 +7,7 @@ import { IMAGES } from "@/constant";
 
 export default function TopChampions() {
   return (
-    <Card className="mt-6 p-6 flex items-center w-full min-w-fit">
+    <Card className="mt-6 p-6 flex items-center shadow-[0_0_20px] shadow-gray-400/30  w-full min-w-fit">
       <CardContent className="p-0">
         <div className="flex items-center gap-2">
           <Trophy
@@ -33,6 +33,7 @@ export default function TopChampions() {
           })}
         </div>
 
+        {/* Highlights */}
         <HighlightsRow />
       </CardContent>
     </Card>

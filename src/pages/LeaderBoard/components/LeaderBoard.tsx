@@ -4,7 +4,7 @@ import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
 
 export default function LeaderBoard() {
     return (
-        <Card className="mt-6 p-0 flex items-center w-full min-w-fit">
+        <Card className="mt-6 p-0 shadow-[0_0_20px] shadow-gray-400/30  flex items-center w-full min-w-fit">
             {/* Top */}
             <CardContent className="py-4 flex flex-col items-center w-full rounded-t-xl bg-yellow-50 border-b-[1.5px] border-orange-200">
 

@@ -25,7 +25,7 @@ const data = [
 
 export default function StudentEngagementTrends() {
     return (
-        <Card className="rounded-2xl shadow-[0_0_20px] shadow-gray-400/20  mt-6 w-full">
+        <Card className="rounded-2xl shadow-[0_0_20px] shadow-gray-400/30  mt-6 w-full">
             <CardHeader className="pb-2">
                 <CardTitle className="text-base sm:text-lg">
                     Student Engagement Trends
