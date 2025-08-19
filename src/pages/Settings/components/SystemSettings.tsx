@@ -22,7 +22,7 @@ export default function SystemSettings() {
                 <div className="space-y-2">
                     <Label className="font-normal mt-4">Default Language</Label>
                     <Select defaultValue="english">
-                        <SelectTrigger className="border-2 w-full">
+                        <SelectTrigger className="border-2  w-full">
                             <SelectValue
                                 placeholder="Select Language"
                             />
