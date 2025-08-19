@@ -46,8 +46,7 @@ module.exports = {
     },
   },
   plugins: [
-    require("tailwindcss"),
-    require("tailwindcss-animate"),
+    require("tailwindcss"), 
     require("autoprefixer"),
   ],
 };

@@ -1,70 +1,64 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## live - https://greenwoodelementary.netlify.app/ 
+
+## Greenwood Elementary School Admin Dashboard
+
+A modern, responsive Admin Dashboard for Greenwood Elementary School.
+This project is built using React.js + TypeScript + Tailwind CSS, configured with CRACO for custom overrides.
+
+It provides school administrators with real-time analytics, leaderboards, and student performance insights.
+
+## Features
+
+Responsive Dashboard UI – Clean, mobile-first design using Tailwind CSS.
+React 19 + TypeScript – Type-safe, scalable, and maintainable frontend.
+Component-Based Architecture – Reusable and modular design.
+Data Visualization – Student performance charts, class distribution, and leaderboards.
+
+## Pages Included:
+Dashboard – Overview of school statistics, charts, and student data.
+Leaderboard – Top student rankings and champions.
+Analytics – Performance analytics with data-driven charts.
+Settings – School/Admin configuration options.
+Not Found Page (404) – Handles invalid routes gracefully.
+Radix UI + ShadCN components – For accessibility and modern UI patterns.
+
+## Tech Stack
+Framework: React 19 (with TypeScript)
+Styling: Tailwind CSS + tailwind-merge
+UI Components: Radix UI + ShadCN + Lucide Icons
+Charts: Recharts
+Routing: React Router v7
+Config: CRACO (instead of ejecting CRA)
+
+## Installation & Setup
+
+## Clone the Repository
+git clone https://github.com/prisam1/GreenWood.git
+cd GreenWood
+
+## Install Dependencies
+npm install
+
+## Run Development Server
+npm start
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser.
+
+## Build for Production
+npm run build
+
+# Run Tests
+npm test
+
+## Why CRA + CRACO (Not Vite)?
+CRA (Create React App) – Well-established ecosystem, stable for large-scale projects (like schools), better library compatibility.
+CRACO – Allows extending CRA config without ejecting. Used here to customize Tailwind and PostCSS.
+CRA was chosen for long-term stability, support, and compatibility with testing libraries and enterprise setups.
 
 ## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+"start": "craco start",      // Start development server
+"build": "craco build",      // Build production
+"test": "craco test",        // Run tests
+"eject": "react-scripts eject" // Eject config (not recommended)
