@@ -68,7 +68,7 @@ export const STATS = [
     },
     {
       title: "Active Students",
-      value: "1156",
+      value: 1156,
       data: "+5% from last month.",    
     },
   ];

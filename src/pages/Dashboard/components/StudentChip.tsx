@@ -18,6 +18,8 @@ interface StudentProps {
 
 export const StudentChip = ({ student }: StudentProps) => {
 
+    const formattedPoints = student.points.toLocaleString("en-US");
+
     return (
         <Card className="flex flex-row items-center justify-between rounded-2xl shadow-[0_0_20px] shadow-gray-400/30 p-3">
             <CardContent className="flex items-center gap-3">
@@ -35,7 +37,7 @@ export const StudentChip = ({ student }: StudentProps) => {
                             {student.accuracy}%
                         </CardDescription>
                         <div className="">
-                            <CardDescription className="text-gray-500 text-[12px]">{student.points}</CardDescription>
+                            <CardDescription className="text-gray-500 text-[12px]">{formattedPoints}</CardDescription>
                             <CardDescription className="text-gray-500 text-[12px]">XP</CardDescription>
                         </div>
 
