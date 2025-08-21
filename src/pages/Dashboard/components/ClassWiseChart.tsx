@@ -11,7 +11,11 @@ export default function ClassWiseChart() {
       </CardHeader>
       <CardContent className="h-64 mt-10">
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={classWiseData}>
+          <BarChart 
+          data={classWiseData}
+          margin={{ top: 0, right: 4, bottom: 28, left: -28 }}
+          barGap={8}
+          >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="cls" tick={{ fontSize: 12 }} />
             <YAxis tick={{ fontSize: 12 }} />

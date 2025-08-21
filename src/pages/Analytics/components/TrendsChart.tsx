@@ -36,11 +36,11 @@ export default function StudentEngagementTrends() {
             </CardHeader>
 
             <CardContent>
-                <div className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px]">
+                <div className="w-full h-[300px] md:h-[350px] lg:h-[400px]">
                     <ResponsiveContainer width="100%" height="100%">
                         <BarChart
                             data={data}
-                            margin={{ top: 10, right: 20, left: 0, bottom: 0 }}
+                            margin={{ top: 0, right: -30, left: -30, bottom: 0 }}
                             barGap={8}
                         >
                             <CartesianGrid strokeDasharray="3 3" />

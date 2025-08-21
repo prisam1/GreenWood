@@ -9,7 +9,6 @@ export const AnalyticsCard = ({ title, value, data }: any) => {
 
     let formattedPoints = ""
 
-
     if (typeof value === "number") {
 
         formattedPoints = value.toLocaleString("en-US");

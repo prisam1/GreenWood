@@ -84,12 +84,12 @@ export default function SkillPerformanceCard() {
                     ))}
                 </div>
 
-                {/* Chart */}
+                {/* Bar Chart */}
                 <div className="w-full md:mt-8 mt-4 h-[220px] sm:h-[260px] md:h-[300px] lg:h-[300px]">
                     <ResponsiveContainer width="100%" height="100%">
                         <BarChart
                             data={skills}
-                            margin={{ top: 8, right: 8, bottom: 20, left: 0 }}
+                            margin={{ top: 0, right: 0, bottom: 28, left: -28 }}
                             barGap={8}
                         >
                             <CartesianGrid strokeDasharray="3 3" />
@@ -111,7 +111,10 @@ export default function SkillPerformanceCard() {
                                     borderRadius: "8px",
                                 }}
                             />
-                            <Bar dataKey="value" radius={[4, 4, 0, 0]} maxBarSize={70}>
+                            <Bar
+                                dataKey="value"
+                                radius={[4, 4, 0, 0]}
+                                maxBarSize={70}>
                                 {skills.map((s, i) => (
                                     <Cell key={i} fill={s.color} />
                                 ))}

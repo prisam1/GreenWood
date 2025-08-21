@@ -6,8 +6,10 @@ import { useState } from "react";
 import { LogOut, Menu, X } from "lucide-react";
 
 export default function Sidebar() {
-  const location = useLocation();
+
   const [isOpen, setIsOpen] = useState(false);
+
+  const location = useLocation();
 
   return (
     <>
@@ -44,10 +46,10 @@ export default function Sidebar() {
           ${isOpen ? "translate-x-0 p-0 rounded-none" : "-translate-x-full"}
         `}
       >
-        {/* Logo (desktop only) */}
+        {/* Logo */}
         <Link
           to="/"
-          className="flex gap-2 md:p-5 p-2 border-b">
+          className="flex gap-2 md:p-5 p-2 pl-4 border-b">
           <img
             src={IMAGES.logo}
             alt="logo"
@@ -57,6 +59,8 @@ export default function Sidebar() {
             <p className="text-2xl font-bold text-blue-500">SpeakGenie</p>
             <p className="text-xs text-muted-foreground">Admin Panel</p>
           </div>
+
+          {isOpen && <X className="h-5 w-5 md:hidden ml-3" />}
         </Link>
 
         {/* Menu */}
@@ -67,6 +71,7 @@ export default function Sidebar() {
               return (
                 <NavLink key={item.label} to={item.path}>
                   <Button
+                    onClick={() => setIsOpen(false)}
                     variant={isActive ? "default" : "custom"}
                     className="justify-start gap-2 py-4 px-5 w-full"
                   >

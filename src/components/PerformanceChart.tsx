@@ -14,7 +14,7 @@ export default function PerformanceChart({ title, student }: any) {
             <CardContent>
                 <div className="gap-4 items-center mt-8">
 
-                    {/* Chart */}
+                    {/* PieChart */}
                     <div className="h-64">
                         <ResponsiveContainer width="100%" height="100%">
                             <PieChart>
