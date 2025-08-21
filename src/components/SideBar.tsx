@@ -31,9 +31,8 @@ export default function Sidebar() {
           variant="ghost"
           size="icon"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
         >
-          {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
+          {isOpen ? <X /> : <Menu />}
         </Button>
       </Card>
 
