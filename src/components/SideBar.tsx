@@ -59,8 +59,6 @@ export default function Sidebar() {
             <p className="text-2xl font-bold text-blue-500">SpeakGenie</p>
             <p className="text-xs text-muted-foreground">Admin Panel</p>
           </div>
-
-          {isOpen && <X className="h-5 w-5 md:hidden ml-3" />}
         </Link>
 
         {/* Menu */}
